@@ -1,3 +1,19 @@
+## Description
+
+Do GildedRose refactoring kata in your language/platform of choice:  
+<https://github.com/emilybache/GildedRose-Refactoring-Kata>
+
+Detailed requirements can be found here:  
+https://github.com/emilybache/GildedRose-Refactoring-Kata/blob/master/GildedRoseRequirements.txt
+
+### Special requirements:
+* Application type – ​console application ​or​ a class covered with tests​.
+* Algorithm correctness must be ensured by covering it with automated ​unit tests​.
+* Source code should be provided in ​public repository​ (​github.com​, ​bitbucket.org​, etc.)
+* Try committing early and often.
+* Comment shortcuts you take when you have an idea for better implementation.
+* Don't hesitate to use new language features where it makes sense.
+
 Requirements
 ------------
 
@@ -18,10 +34,9 @@ It can be downloaded here: https://getcomposer.org/download/
 Getting Started
 ---------------
 
-To begin the kata, install the dependencies and run `phpunit`:
+Install the dependencies and run `vendor/bin/phpunit`:
 
 ```
-cd php7
 composer install
 vendor/bin/phpunit
 ```
@@ -44,8 +59,7 @@ use the `texttest_fixture` script:
 php fixtures/texttest_fixture.php
 ```
 
-Tips
+Comments 
 ----
 
-PHPUnit has a very thorough reference manual. It would be particularly useful to explore the
-[Data Providers](https://phpunit.readthedocs.io/en/8.1/writing-tests-for-phpunit.html#data-providers) section.
+PHPUnit DataProviders used.
