@@ -29,15 +29,15 @@ class GildedRoseTest extends \PHPUnit\Framework\TestCase {
      */
     public function Items(): array {
         return [
-            [9, 19, ['+5 Dexterity Vest', 10, 20]],
-            [-1, 8, ['Aged Brie', 2, 0]],
-            [-6, -1, ['Elixir of the Mongoose', 5, 7]],
+            [4, 9, ['+5 Dexterity Vest', 5, 10]],
+            [48, 7, ['Aged Brie', 49, 6]],
+            [-6, 8, ['Elixir of the Mongoose', -5, 10]],
             [2, 2, ['Sulfuras, Hand of Ragnaros', 2, 2]],
             [2, 2, ['Sulfuras, Hand of Ragnaros', -1, 80]],
-            [2, 2, ['Backstage passes to a TAFKAL80ETC concert', 15, 20]],
-            [2, 2, ['Backstage passes to a TAFKAL80ETC concert', 10, 49]],
-            [1, 1, ['Backstage passes to a TAFKAL80ETC concert', 5, 49]],
-            [3, 3, ['Conjured Mana Cake', 3, 6]]
+            [14, 21, ['Backstage passes to a TAFKAL80ETC concert', 15, 20]],
+            [9, 50, ['Backstage passes to a TAFKAL80ETC concert', 10, 49]],
+            [4, 33, ['Backstage passes to a TAFKAL80ETC concert', 5, 30]],
+            [2, 4, ['Conjured Mana Cake', 3, 6]]
         ];
     }
 }
