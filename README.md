@@ -16,7 +16,7 @@ https://github.com/emilybache/GildedRose-Refactoring-Kata/blob/master/GildedRose
 * Comment shortcuts you take when you have an idea for better implementation.
 * Don't hesitate to use new language features where it makes sense.
 
-## Result ≡(▔﹏▔)≡  
+## Result (by Telesoftas comment) ≡(▔﹏▔)≡  
 
 >•	No master test, to test if your solution still works as legacy  
 •	Calculations are not the same after refactoring, (Aged Brie) calculations are wrong  
