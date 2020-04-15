@@ -1,3 +1,5 @@
+# GildedRose TeleSoftas 
+
 ## Description
 
 Do GildedRose refactoring kata in your language/platform of choice:  
@@ -13,6 +15,19 @@ https://github.com/emilybache/GildedRose-Refactoring-Kata/blob/master/GildedRose
 * Try committing early and often.
 * Comment shortcuts you take when you have an idea for better implementation.
 * Don't hesitate to use new language features where it makes sense.
+
+## Result (by Telesoftas comment) ≡(▔﹏▔)≡  
+
+>•	No master test, to test if your solution still works as legacy  
+•	Calculations are not the same after refactoring, (Aged Brie) calculations are wrong  
+•	No OOP, SOLID, TDD principles used  
+•	No Design pattern(s) used  
+•	No tests, only one big test which tests one particular case  
+•	Test fail, so why give code with failing test?  
+•	Not following PSR-2 / PSR-12 standard  
+•	In the future, smaller commits would improve how code changes were presented  
+•	Better test(s) to cover more cases  
+
 
 Requirements
 ------------
