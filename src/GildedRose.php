@@ -2,15 +2,17 @@
 
 namespace App;
 
-final class GildedRose {
-
+final class GildedRose
+{
     private $items = [];
 
-    public function __construct($items) {
+    public function __construct($items)
+    {
         $this->items = $items;
     }
 
-    public function updateQuality() {
+    public function updateQuality()
+    {
         foreach ($this->items as $item) {
             switch ($item->name) {
                 case 'Aged Brie':
@@ -18,7 +20,7 @@ final class GildedRose {
                     $item->sell_in -= 1;
                     // "Aged Brie" actually increases in Quality the older it gets
                     $item->quality += 1;
-            
+
                     // "Aged Brie" actually increases in Quality the older it gets
                     // Once the sell by date has passed, Quality increaces twice as fast (probably)
                     if ($item->sell_in <= 0) {
@@ -32,7 +34,7 @@ final class GildedRose {
                 case 'Backstage passes to a TAFKAL80ETC concert':
                     // "Backstage passes", like aged brie, increases in Quality as its SellIn value approaches;
                     $item->quality += 1;
-                    
+
                     // Quality increases by 2 when there are 10 days or less
                     if ($item->sell_in <= 10) {
                         $item->quality += 1;
@@ -59,7 +61,7 @@ final class GildedRose {
                     $item->sell_in -= 1;
                     // "Conjured" items degrade in Quality twice as fast as normal items
                     $item->quality -= 2;
-                    
+
                     // Once the sell by date has passed, Quality degrades twice as fast
                     // "Conjured" items degrade in Quality twice as fast as normal items
                     if ($item->sell_in <= 0) {
@@ -74,7 +76,7 @@ final class GildedRose {
                     // At the end of each day our system lowers both values for every item
                     $item->sell_in -= 1;
                     $item->quality -= 1;
-                    
+
                     // Once the sell by date has passed, Quality degrades twice as fast
                     if ($item->sell_in <= 0) {
                         $item->quality -= 1;
@@ -87,9 +89,8 @@ final class GildedRose {
                     if ($item->quality < 0) {
                         $item->quality = 0;
                     }
-                    break;      
+                    break;
             }
         }
     }
 }
-

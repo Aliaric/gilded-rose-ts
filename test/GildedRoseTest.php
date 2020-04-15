@@ -2,17 +2,19 @@
 
 namespace App;
 
-class GildedRoseTest extends \PHPUnit\Framework\TestCase {
+class GildedRoseTest extends \PHPUnit\Framework\TestCase
+{
 
-    /** @test 
+    /** @test
      *  @dataProvider Items
-     */ 
-    public function massTest($expected_sell_in, $expected_quality, $testing_items) {
+     */
+    public function massTest($expected_sell_in, $expected_quality, $testing_items)
+    {
         // Create testing item object
         $items      = [new Item($testing_items[0], $testing_items[1], $testing_items[2])];
         // Create glidedRose object
         $gildedRose = new GildedRose($items);
-        
+
         // Go through one day iteration.
         $gildedRose->updateQuality();
 
@@ -24,10 +26,11 @@ class GildedRoseTest extends \PHPUnit\Framework\TestCase {
     }
     /**
      * expected sell_in, expected quality, [name, sell_in, quality]
-     * 
-     * @return array 
+     *
+     * @return array
      */
-    public function Items(): array {
+    public function Items(): array
+    {
         return [
             [4, 9, ['+5 Dexterity Vest', 5, 10]],
             [48, 7, ['Aged Brie', 49, 6]],
