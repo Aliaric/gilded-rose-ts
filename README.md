@@ -1,4 +1,4 @@
-# GildedRose TeleSoftas 
+# GildedRose by me (●'◡'●) 
 
 ## Description
 
